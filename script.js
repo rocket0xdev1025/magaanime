@@ -1,7 +1,7 @@
 // ===== Single source of truth: set the contract address here =====
-const CONFIG={CA:"TBA",telegram:"https://t.me/massgasol",x:"https://x.com/massgasol"};
+const CONFIG={CA:"7te6N3TmHCrrBstucpSho4UYDMw8gwT4TPRCpuUfpump",telegram:"https://t.me/massgasol",x:"https://x.com/massgasol"};
 (()=>{
-const ca=CONFIG.CA, live=ca&&ca!=="TBA";
+const ca=CONFIG.CA, live=ca&&ca!=="7te6N3TmHCrrBstucpSho4UYDMw8gwT4TPRCpuUfpump";
 const links={buy:`https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=${ca}`,chart:`https://dexscreener.com/solana/${ca}`,telegram:CONFIG.telegram,x:CONFIG.x};
 document.querySelectorAll("[data-link]").forEach(a=>a.href=links[a.dataset.link]);
 document.querySelectorAll(".ca-value").forEach(e=>e.textContent=ca);
